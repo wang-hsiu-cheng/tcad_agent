@@ -1,0 +1,22 @@
+services:
+  tcad-agent:
+    build: .
+    container_name: tcad_agent
+    environment:
+      # 告訴容器內的 ssh 到哪裡找 Agent 通訊 Socket
+      - SSH_AUTH_SOCK=/run/host-services/ssh-auth.sock
+    volumes:
+      - ../:/app
+      # 將 Docker Desktop 的代理 Socket 掛載進容器
+      - /run/host-services/ssh-auth.sock:/run/host-services/ssh-auth.sock
+      - ../ssh_config:/root/.ssh/config
+    env_file:
+      - ../.env
+    stdin_open: true
+    tty: true
+    stop_grace_period: 3s
+    deploy:
+      resources:
+        limits:
+          memory: 6G
+    command: /bin/bash
