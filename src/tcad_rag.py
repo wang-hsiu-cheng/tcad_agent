@@ -255,6 +255,10 @@ class AdvancedHierarchicalRAG:
 if __name__ == "__main__":
     # 多個資料集路徑預設定義
     DATASET_PATHS = [
+        "./datasets/victoryprocess_rag_dataset.json",
+        "./datasets/victorydevice_rag_dataset.json",
+        "./datasets/victoryvisual_rag_dataset.json",
+        "./datasets/deckbuild_rag_dataset.json",
         "./victoryprocess_rag_dataset.json",
         "./victorydevice_rag_dataset.json",
         "./victoryvisual_rag_dataset.json",

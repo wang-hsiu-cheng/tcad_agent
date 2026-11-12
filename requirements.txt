@@ -1,0 +1,16 @@
+# 核心多智能體工作流與遠端控制
+langgraph>=0.2.0
+fabric>=3.0.0
+python-dotenv>=1.0.0
+
+# 數據運算與機器學習 / Gemini SDK
+numpy>=1.24.0
+pandas>=2.0.0
+google-genai>=0.1.1
+langchain-google-genai
+
+# 文件解析、PDF 與 OCR 深度提取 (RAG 資料集建置)
+unstructured[pdf]>=0.12.0
+PyMuPDF>=1.23.0
+docling
+marker-pdf

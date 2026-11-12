@@ -28,6 +28,10 @@ client = env.get_client()
 
 # --- 2. init rag dataset ---
 DATASET_PATHS = [
+    "./datasets/deckbuild_rag_dataset.json",
+    "./datasets/victoryprocess_rag_dataset.json",
+    "./datasets/victorydevice_rag_dataset.json",
+    "./datasets/victoryvisual_rag_dataset.json",
     "./deckbuild_rag_dataset.json",
     "./victoryprocess_rag_dataset.json",
     "./victorydevice_rag_dataset.json",

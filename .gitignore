@@ -2,3 +2,10 @@
 *config
 *.in
 *.pdf
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+venv/
+.venv/
+final_report.md
